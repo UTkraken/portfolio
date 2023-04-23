@@ -1,3 +1,3 @@
 # Kraken Portfolio
 
-### My first from scratch web porfolio !
+### My first web portfolio from scratch !
