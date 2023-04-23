@@ -3,18 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Thomas - Engineer</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="sea-back">
+        <div class="water"></div>
+    </div>
+
     <section class="wrap">
         <section id="home">
             <aside>
                 <div class="dsiplay-factor">
                     <div>
-                        <a href="#" style="margin-bottom: 20%;"><img src="data/image/git.png" alt="github"></a>
-                        <a href="#"><img src="data/image/lk.png" alt="linkedin"></a>
+                        <a href="https://github.com/UTkraken" style="margin-bottom: 20%;"><img src="data/image/git.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/thomas-burgard-34b98349/"><img src="data/image/lk.png" alt="linkedin"></a>
                     </div>
                 </div>
             </aside>
@@ -25,7 +31,10 @@
                 <a href="#info">contact</a>
             </div>
             <div class="content-container">
+                <img class="jellyfish" src="data/image/mde.png" alt="">
                 <div class="img-background" style="background-image: url(data/image/pres.png);"></div>
+                <img class="octopus" src="data/image/octopus.png" alt="">
+                <img class="whale" src="data/image/whale.png" alt="">
             </div>
             <div class="scroll-container">
                 <div class="scroll">
@@ -126,19 +135,54 @@
 
         <section id="bio">
             <h1 class="main-title">About me</h1>
+            <div class="bio-container">
+
+            </div>
         </section>
 
         <section id="info">
             <h1 class="main-title">Contact</h1>
+            <div class="contact-container">
+                <div class="info-box">
+                    <h2>Information</h2>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non tortor porttitor, varius enim vel, dapibus tortor. Pellentesque leo ante, pellentesque sed tincidunt eget, porttitor id lacus. </div>
+                </div>
+                <div class="location-box">
+                    <h3> <img src="data/image/loc.png" alt=""> Location</h3>
+                    <div>Available everywhere in the world</div>
+                </div>
+                <div class="phone-box">
+                    <h3><img src="data/image/phone.png" alt="">Phone</h3>
+                    <div>+33(0)6 07 49 82 52</div>
+                </div>
+                <div class="mail-box">
+                    <h3><img src="data/image/mail.png" alt="">Email</h3>
+                    <div>burgard.thomas@ik.me</div>
+                </div>
+            </div>
         </section>
     </section>
+    <section id="footer">
+        <img src="data/image/logo.png" alt="">
+        <div>Copyright <img class="copyright" src="data/image/copy.png" alt="">. All rights reserved to Thomas Burgard</div>
+    </section>
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+            <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+            <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+            keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate> 
+        </filter>
+    </svg>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
         integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"
         integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/paralaxe.js"></script>
 </body>
 
 </html>
