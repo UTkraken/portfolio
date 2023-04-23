@@ -1,29 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Thomas - Engineer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="wrap">
-        <aside>
-            <div>
-                <div>
-                    <a href="#"><img src="data/image/git.png" alt="github"></a>
-                    <a href="#"><img src="data/image/lk.png" alt="linkedin"></a>
+    <section class="wrap">
+        <section id="home">
+            <aside>
+                <div class="dsiplay-factor">
+                    <div>
+                        <a href="#" style="margin-bottom: 20%;"><img src="data/image/git.png" alt="github"></a>
+                        <a href="#"><img src="data/image/lk.png" alt="linkedin"></a>
+                    </div>
+                </div>
+            </aside>
+            <div class="menu display-factor">
+                <a href="#home">home</a>
+                <a href="#projects">projects</a>
+                <a href="#bio">about</a>
+                <a href="#info">contact</a>
+            </div>
+            <div class="content-container">
+                <div class="img-background" style="background-image: url(data/image/pres.png);"></div>
+            </div>
+            <div class="scroll-container">
+                <div class="scroll">
+                    <div class="ball"></div>
+                    <div class="line"></div>
                 </div>
             </div>
-        </aside>
-        <div class="menu">
-            <a href="#">projects</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-        </div>
-        <section>
-            <img src="data/image/pres.png" alt="logo-thomas">
         </section>
-        <div class="location-bar">Home</div>
-    </div>
+
+        <section id="projects">
+            <h1 class="main-title">My Projects</h1>
+            <div class="app">
+                <div class="cardList">
+                    <button class="cardList__btn btn btn--left">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <div class="cards__wrapper">
+                        <div class="card current--card">
+                            <div class="card__image">
+                                <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="card next--card">
+                            <div class="card__image">
+                                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="card previous--card">
+                            <div class="card__image">
+                                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="cardList__btn btn btn--right">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="infoList">
+                    <div class="info__wrapper">
+                        <div class="info current--info">
+                            <h1 class="text name">Highlands</h1>
+                            <h4 class="text location">Scotland</h4>
+                            <p class="text description">The mountains are calling</p>
+                        </div>
+
+                        <div class="info next--info">
+                            <h1 class="text name">Machu Pichu</h1>
+                            <h4 class="text location">Peru</h4>
+                            <p class="text description">Adventure is never far away</p>
+                        </div>
+
+                        <div class="info previous--info">
+                            <h1 class="text name">Chamonix</h1>
+                            <h4 class="text location">France</h4>
+                            <p class="text description">Let your dreams come true</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="app__bg">
+                    <div class="app__bg__image current--image">
+                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                    </div>
+                    <div class="app__bg__image next--image">
+                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                    </div>
+                    <div class="app__bg__image previous--image">
+                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <svg class="icons" style="display: none;">
+                <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                    <polyline points='328 112 184 256 328 400'
+                        style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+                <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                    <polyline points='184 112 328 256 184 400'
+                        style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                </symbol>
+            </svg>
+        </section>
+
+        <section id="bio">
+            <h1 class="main-title">About me</h1>
+        </section>
+
+        <section id="info">
+            <h1 class="main-title">Contact</h1>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"
+        integrity="sha512-kfs3Dt9u9YcOiIt4rNcPUzdyNNO9sVGQPiZsub7ywg6lRW5KuK1m145ImrFHe3LMWXHndoKo2YRXWy8rnOcSKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
